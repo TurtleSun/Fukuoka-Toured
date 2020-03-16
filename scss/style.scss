@@ -1,0 +1,20 @@
+@import "_variables.scss";
+@import "_title.scss";
+@import "_summary.scss";
+@import "_Expand-Attract.scss";
+@import "_Expand-Food.scss";
+@import "_Trans-Map.scss";
+@import "_nav.scss";
+
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 6px;
+    font-family: 'Baloo Chettan 2', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1B1B1B;
+}

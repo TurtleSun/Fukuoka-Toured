@@ -1,0 +1,212 @@
+@import "./variables";
+
+.transport {
+  $border-color: rgba(color(primary-dark), 1.0);
+  width: 90px;
+  min-height: 75px;
+  position: relative;
+  border: 2px solid $border-color;
+  border-left: 20px solid $border-color;
+  padding: 5px;
+  font-size: 1.5rem;
+  display: inline-block;
+  color: rgba(white, 1);
+    @include tablet{
+      width: 300px;
+      min-height: 250px;
+      border-left: 40px solid $border-color;
+      padding: 15px;
+      font-size: 3rem;
+    }
+    @include laptop{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+  #T-head {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(white, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: -15px;
+      @include tablet{
+        font-size: 2rem;
+        letter-spacing: 8px;
+        margin-left: -30px;
+      }
+    transform: rotate(270deg);
+    transform-origin: (0 0);
+  }
+  
+}
+
+.food {
+  $border-color: rgba(color(f-brown), 1.0);
+  width: 90px;
+  min-height: 75px;
+  position: relative;
+  border: 2px solid $border-color;
+  border-left: 20px solid $border-color;
+  padding: 5px;
+  font-size: 1.5rem;
+  display: inline-block;
+  color: rgba(white, 1);
+    @include tablet{
+      width: 300px;
+      min-height: 250px;
+      border-left: 40px solid $border-color;
+      padding: 15px;
+      font-size: 3rem;
+    }
+    @include laptop{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+  #Fo-head {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(white, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: -15px;
+      @include tablet{
+        font-size: 2rem;
+        letter-spacing: 8px;
+        margin-left: -30px;
+      }
+    transform: rotate(270deg);
+    transform-origin: (0 0);
+  }
+  
+}
+
+.attractions {
+  $border-color: rgba(color(w-red), 1.0);
+  width: 90px;
+  min-height: 75px;
+  position: relative;
+  border: 2px solid $border-color;
+  border-left: 20px solid $border-color;
+  padding: 5px;
+  font-size: 1.5rem;
+  display: inline-block;
+  color: rgba(white, 1);
+    @include tablet{
+      width: 300px;
+      min-height: 250px;
+      border-left: 40px solid $border-color;
+      padding: 15px;
+      font-size: 3rem;
+    }
+    @include laptop{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+
+  #At-head {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(white, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: -15px;
+      @include tablet{
+        font-size: 2rem;
+        letter-spacing: 8px;
+        margin-left: -30px;
+      }
+    transform: rotate(270deg);
+    transform-origin: (0 0);
+  }
+}
+
+.summary{
+  display: flex;
+  justify-content: space-evenly;
+  height: 80rem;
+  width: auto;
+  flex-direction: row;
+  background:#1B1B1B;
+    @include tablet{
+      flex-direction: column;
+      margin-top: 10rem;
+      height: 90rem;
+    }
+}
+
+.summary-info{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+    @include tablet{
+      flex-direction: row;
+      justify-content: center;
+    }
+}
+
+.T-content{
+  font-family: 'Varela Round', sans-serif;
+}
+
+.sum-pic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+    @include tablet{
+      height: 60%;
+      width: 100%;
+      flex-direction: row;
+      position: relative;
+    }
+    @include laptop{
+      height: 65%;
+    }
+}
+
+.pic{
+  height: 15rem;
+  width: 18rem;
+    @include tablet{
+      height: 18rem;
+      width: auto;
+      position: absolute;
+      outline-offset: .5rem;
+    }
+    @include laptop{
+      height: 20rem;
+    }
+     @include desktop{
+      height: 25rem;
+    } 
+}
+
+.ramen{
+  position: absolute;
+  @include tablet{
+    left: 5rem;
+    top: 5rem;
+  }
+}
+.air{
+  position: relative;
+}
+.park{
+  position: absolute;
+  @include tablet{
+    right: 5rem;
+    bottom: 5rem;
+  }
+}
+
+

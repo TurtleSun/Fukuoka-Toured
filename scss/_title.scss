@@ -1,0 +1,66 @@
+
+.header {
+    position: relative;
+    height: 100vh;
+  
+    // background-color: rgba(color(primary), 1);
+    background-image: url("fuku.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+  
+  .text-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  .heading-primary {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      text-transform: uppercase;
+      width: 100vw;
+      text-align: center;
+      //text-shadow: 3px 3px 8px #111;
+      position: relative;
+      margin: 40px 0;
+    
+    .heading-main {
+        font-size: 4rem;
+        text-shadow: 3px 3px #333;
+        width: 80vw;
+        letter-spacing: 1rem;
+        text-align: center;
+        margin: 0 auto;
+        font-family: 'Neuton', serif;
+
+        @include tablet {
+          font-size: 6rem;
+          letter-spacing: 1.8rem;
+        }
+        @include laptop {
+          font-size: 10rem;
+          letter-spacing: 2.2rem;
+        }
+    }
+    .heading-sub {
+        font-size: 1.5rem;
+        width: 80vw;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        letter-spacing: 2px;
+        padding: 5px 10px;
+        line-height: 24px;
+        font-family: 'Sawarabi Mincho', sans-serif;
+        @include laptop {
+          font-size: 3rem;
+        }
+    }
+  }
+}
+  
